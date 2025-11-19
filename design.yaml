@@ -1,0 +1,15 @@
+sea:
+  lattice_constant: 5.43
+  supercell: [6, 6, 6]
+
+island:
+  enabled: true
+  # When all zero, the backend automatically centres the island in the middle
+  # of the sea supercell.  You can specify an explicit centre if desired.
+  center: [0.0, 0.0, 0.0]
+  # Fallback radius used if no facets are defined; also sets default facet
+  # offsets when adding new facets in the UI.
+  radius: 8.0
+  # Start with no facets; the UI will populate this list when the user adds
+  # planes.  Each facet must define `frame`, `miller`, `offset`, and `side`.
+  facets: []

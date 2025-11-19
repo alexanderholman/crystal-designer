@@ -1,0 +1,165 @@
+/* Global layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+#sidebar {
+  width: 320px;
+  background: #1f1f24;
+  color: #eee;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+#sidebar h2,
+#sidebar h3,
+fieldset legend {
+  margin-top: 0;
+  color: #fff;
+}
+
+fieldset {
+  border: 1px solid #555;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="range"] {
+  margin-top: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#apply-btn {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 10px 0;
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#apply-btn:hover {
+  background: #2563eb;
+}
+
+#yaml-view {
+  background: #111;
+  color: #9f9;
+  padding: 8px;
+  max-height: 40vh;
+  overflow-y: auto;
+  font-size: 0.75rem;
+}
+
+#viewport {
+  flex: 1;
+  background: #000;
+  position: relative;
+}
+
+#three-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Facet UI styling */
+.facet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+#add-facet-btn {
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: #22c55e;
+  color: #000;
+  cursor: pointer;
+}
+
+#add-facet-btn:hover {
+  background: #16a34a;
+}
+
+.facet-help {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin: 0 0 6px 0;
+}
+
+.facet-card {
+  border: 1px solid #444;
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  background: #15151a;
+}
+
+.facet-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.facet-card-header span {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.facet-remove-btn {
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 3px;
+  background: #ef4444;
+  color: #fff;
+  cursor: pointer;
+}
+
+.facet-remove-btn:hover {
+  background: #b91c1c;
+}
+
+.facet-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+  align-items: center;
+}
+
+.facet-row label {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.facet-row input[type="number"],
+.facet-row select {
+  flex: 1;
+  font-size: 0.8rem;
+}
