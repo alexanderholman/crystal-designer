@@ -4,7 +4,8 @@ Interactive polyhedral crystal designer built with Python and JavaScript. This t
 
 ## Features
 
-- Define bulk crystal orientation, supercell size, and lattice spacing.
+- Define bulk crystal orientation via Miller directions, supercell size, and lattice spacing.
+- Specify orientation vectors (a_dir, b_dir, c_dir) via UI for full control over host lattice orientation.
 - Carve islands or inclusions in the bulk using multiple facet planes with Miller indices.
 - Visualize each facet as a plane in the 3D scene; adjust plane offsets interactively.
 - Add or remove facets, configure side (inside/outside) conditions.
